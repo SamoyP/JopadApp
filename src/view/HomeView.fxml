@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1000.0" prefHeight="489.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="37.0" prefHeight="54.0" prefWidth="303.0" style="-fx-background-color: #377bb5;" text="HOMESCREEN" textAlignment="CENTER" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="248.0" AnchorPane.topAnchor="37.0" />
+      <GridPane alignment="CENTER" layoutX="55.0" layoutY="127.0" prefHeight="306.0" prefWidth="694.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="2016 - 2017" textAlignment="CENTER" wrapText="true" />
+            <Button disable="true" mnemonicParsing="false" text="2017 - 2018" GridPane.columnIndex="1" />
+            <Button fx:id="toevoegenDanser" mnemonicParsing="false" onAction="#showAddDancer" text="Lid toevoegen" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" text="Contact" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
