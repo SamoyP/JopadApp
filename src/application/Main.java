@@ -17,6 +17,7 @@ public class Main extends Application {
 			
 			//FxTestenController controller = loader.getController();
 			//controller.test();
+			System.out.println("Test for Checkout");
 			Scene scene = new Scene(pane);
 			primaryStage.setScene(scene);
 			primaryStage.show();
