@@ -1,19 +1,27 @@
-package application;
-	
+package view;
+
+import application.Main;
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import view.LoginController;
 
-
-public class Main extends Application {
-	@Override
+public class HomeController extends Application {
+	@FXML
+	Button toevoegenDanser;
+	
+	public HomeController(){
+	}
+	public void test(){
+		
+	}
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("../view/LoginView.fxml"));
+			loader.setLocation(Main.class.getResource("../view/HomeView.fxml"));
 			AnchorPane pane = loader.load();
 			
 			Scene scene = new Scene(pane);
@@ -24,8 +32,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
-	public static void main(String[] args) {
-		launch(args);
+	public void showAddDancer(){
+		new DancerController().start(new Stage());
 	}
 }

@@ -10,7 +10,11 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
+<<<<<<< HEAD
 <AnchorPane prefHeight="1103.0" prefWidth="1305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+=======
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+>>>>>>> rik
    <children>
       <GridPane layoutX="368.0" layoutY="154.0" minHeight="403.0" minWidth="565.0" prefHeight="403.0" prefWidth="565.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="370.0">
         <columnConstraints>
@@ -23,18 +27,27 @@
           <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
+<<<<<<< HEAD
             <TextField alignment="CENTER" maxHeight="27.0" maxWidth="400.0" minHeight="27.0" minWidth="300.0" promptText="Gebruikersnaam" GridPane.rowIndex="1" />
             <TextField alignment="CENTER" maxHeight="27.0" maxWidth="400.0" minHeight="27.0" minWidth="300.0" promptText="Wachtwoord" GridPane.rowIndex="2" />
             <Button maxHeight="27.0" maxWidth="400.0" minHeight="27.0" minWidth="300.0" mnemonicParsing="false" style="-fx-background-color: #377bb5;" text="Aanmelden" textFill="WHITE" GridPane.rowIndex="3">
+=======
+            <TextField fx:id="username" alignment="CENTER" maxWidth="400.0" promptText="Gebruikersnaam" GridPane.rowIndex="0" />
+            <Button fx:id="aanmelden" alignment="CENTER" contentDisplay="CENTER" maxWidth="400.0" mnemonicParsing="false" onAction="#checkLogin" style="-fx-background-color: #377bb5;" text="AANMELDEN" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+>>>>>>> rik
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+<<<<<<< HEAD
             <ImageView fitHeight="209.0" fitWidth="220.0">
                <image>
                   <Image url="@../../resources/Logo.jpg" />
                </image>
             </ImageView>
+=======
+            <PasswordField fx:id="password" alignment="CENTER" maxWidth="400.0" promptText="Wachtwoord" GridPane.rowIndex="1" />
+>>>>>>> rik
          </children>
       </GridPane>
    </children>
